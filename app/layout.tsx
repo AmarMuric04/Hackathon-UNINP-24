@@ -1,22 +1,47 @@
-import type { Metadata } from "next";
-import { Inter } from "next/font/google";
+"use client";
+
+import dynamic from "next/dynamic";
+
+const Navigation = dynamic(
+  () => import("@/components/shared/layout/Navigation"),
+  { ssr: false }
+);
+
 import "./globals.css";
-
-const inter = Inter({ subsets: ["latin"] });
-
-export const metadata: Metadata = {
-  title: "Learnify",
-  description: "This platform is for students for learning",
-};
+import { usePathname } from "next/navigation";
+import { InstructorProvider } from "@/context/InstructorContext";
+import { getAuthData } from "@/utils/helpers";
+import { StudentProvider } from "@/context/StudentContext";
 
 export default function RootLayout({
   children,
-}: Readonly<{
+}: {
   children: React.ReactNode;
-}>) {
+}) {
+  const pathname = usePathname();
+  const isInstructorPathname =
+    pathname === "/instructor-dashboard" ||
+    pathname === "/instructor-dashboard/new-course" ||
+    pathname === "/instructor-dashboard/new-course/manage";
+  const isLoginPathname = pathname === "/signup" || pathname === "/login";
+  const showBoolean = !isInstructorPathname && !isLoginPathname;
+  const authData = getAuthData();
+
   return (
     <html lang="en">
-      <body className={inter.className}>{children}</body>
+      <body>
+        {authData?.typeAuth === "instructor" ? (
+          <InstructorProvider>
+            {showBoolean && <Navigation />}
+            {children}
+          </InstructorProvider>
+        ) : (
+          <StudentProvider>
+            {showBoolean && <Navigation />}
+            {children}
+          </StudentProvider>
+        )}
+      </body>
     </html>
   );
 }
