@@ -66,7 +66,7 @@ const Navigation: React.FC = () => {
             <ShoppingBag />
             <span className="w-6 h-6 bg-yellow-400 absolute rounded-full bottom-[18px] left-4 text-white font-bold text-sm text-center">
               <span className="relative top-[2.4px]">
-                {studentData?.cart.items.length}
+                {studentData?.cart?.items.length}
               </span>
             </span>
           </Link>

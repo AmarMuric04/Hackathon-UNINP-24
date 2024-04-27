@@ -1,16 +1,12 @@
-<<<<<<< HEAD
-export default function Home() {
-  return;
-=======
 import { Hero } from "@/Pages/Hero";
-import { GoogleGeminiEffectDemo } from "../Components/ui/Gemini";
-import { ThreeDCardDemo } from "@/Components/ui/ThreeDcardDemo";
-import slika1 from "../public/Assets/jonas-bg-remove.png";
-import slika2 from "../public/Assets/kiril.png";
-import slika3 from "../public/Assets/max.png";
+import { GoogleGeminiEffectDemo } from "../components/ui/Gemini";
+import { ThreeDCardDemo } from "@/components/ui/ThreeDcardDemo";
+import slika1 from "../public/Slike/jonas-bg-remove.png";
+import slika2 from "../public/Slike/kiril.png";
+import slika3 from "../public/Slike/max.png";
 
-import { MacbookScrollDemo } from "../Components/ui/MacbookScrollDemo";
-import MyFooter from "@/Components/ui/MyFooter";
+import { MacbookScrollDemo } from "../components/ui/MacbookScrollDemo";
+import MyFooter from "@/components/ui/MyFooter";
 
 export default function Home() {
   return (
@@ -45,5 +41,4 @@ export default function Home() {
       <MyFooter />
     </div>
   );
->>>>>>> d7e93474beaa9373c07815ef008ee5decb464b97
 }

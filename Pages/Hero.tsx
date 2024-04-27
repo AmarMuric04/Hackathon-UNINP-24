@@ -1,6 +1,6 @@
 "use client";
 import React from "react";
-import { HeroParallax } from "../Components/Parallax UI/hero-parallax";
+import { HeroParallax } from "../components/Parallax UI/hero-parallax";
 
 export function Hero() {
   return <HeroParallax products={products} />;
