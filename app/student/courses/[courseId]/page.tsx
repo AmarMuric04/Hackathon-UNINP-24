@@ -1,6 +1,5 @@
 "use client";
 import React, { useContext } from "react";
-import { CoursesData } from "../page";
 import Link from "next/link";
 import CourseList from "@/Componentse/students/courses/CourseList";
 import CourseDetailsContent from "@/Componentse/students/courses/details/CourseDetailsContent";

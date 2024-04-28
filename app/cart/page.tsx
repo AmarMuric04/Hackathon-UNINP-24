@@ -1,7 +1,6 @@
 "use client";
 
 import { CartDetails, CartList } from "@/Componentse/cart";
-import { CourseList } from "@/Componentse/courses";
 import ProtectedRoutes from "@/Componentse/shared/auth/ProtectedRoutes";
 import { StudentContext } from "@/context/StudentContext";
 import useSwr from "swr";
