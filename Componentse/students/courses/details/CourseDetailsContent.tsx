@@ -91,7 +91,7 @@ const CourseDetailsContent: React.FC<CourseDetailsProps> = ({ course }) => {
                 onClick={() => setIsVideoOpen(!isVideoOpen)}
                 className="mt-2"
               >
-                {section.lectures.map((lecture: any) => (
+                {section?.lectures.map((lecture: any) => (
                   <h2
                     className="text-white border border-gray-700 mt-2 p-2"
                     key={lecture._id}

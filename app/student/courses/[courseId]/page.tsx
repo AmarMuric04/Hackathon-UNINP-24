@@ -28,7 +28,7 @@ const CourseDetailsPage = ({ params }: { params: { courseId: string } }) => {
           <InstructorDetails course={course} />
         </div>
       </div>
-      <div className="flex flex-col gap-10">
+      {/* <div className="flex flex-col gap-10">
         <h1 className="mt-2 font-bold text-4xl text-center text-white">
           Browse Related Courses
         </h1>
@@ -41,7 +41,7 @@ const CourseDetailsPage = ({ params }: { params: { courseId: string } }) => {
             }
           />
         </div>
-      </div>
+      </div> */}
     </section>
   );
 };

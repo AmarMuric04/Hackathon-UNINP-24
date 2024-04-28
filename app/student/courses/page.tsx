@@ -235,7 +235,6 @@ import useSWR from "swr";
 //     ],
 //   },
 // ];
-
 const CoursesPage = () => {
   const fetcher = (...args: Parameters<typeof fetch>) =>
     fetch(...args).then((res) => res.json());
