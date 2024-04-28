@@ -1,6 +1,6 @@
 "use client";
 import React, { useContext } from "react";
-import CourseList from "../../../components/students/courses/CourseList";
+import CourseList from "../../../Componentse/students/courses/CourseList";
 import { CoursesData } from "@/app/student/courses/page";
 import { useRouter } from "next/navigation";
 import { StudentContext } from "@/context/StudentContext";

@@ -1,11 +1,11 @@
 import { Hero } from "@/Pages/Hero";
-import { GoogleGeminiEffectDemo } from "../components/ui/Gemini";
+import { GoogleGeminiEffectDemo } from "../Componentse/ui/Gemini";
 import { ThreeDCardDemo } from "@/Componentse/ui/ThreeDcardDemo";
 import slika1 from "../public/Slike/jonas-bg-remove.png";
 import slika2 from "../public/Slike/kiril.png";
 import slika3 from "../public/Slike/max.png";
 
-import { MacbookScrollDemo } from "../components/ui/MacbookScrollDemo";
+import { MacbookScrollDemo } from "../Componentse/ui/MacbookScrollDemo";
 import MyFooter from "@/Componentse/ui/MyFooter";
 
 export default function Home() {

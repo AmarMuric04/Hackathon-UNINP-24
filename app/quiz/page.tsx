@@ -1,7 +1,7 @@
 "use client";
 import React, { useState } from "react";
-import Quiz from "../../components/quiz/Quiz";
-import Rules from "../../components/quiz/Rules";
+import Quiz from "../../Componentse/quiz/Quiz";
+import Rules from "../../Componentse/quiz/Rules";
 
 const QuizPage = () => {
   const [showQuiz, setShowQuiz] = useState(false);
