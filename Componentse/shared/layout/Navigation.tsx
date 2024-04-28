@@ -110,7 +110,7 @@ const Navigation: React.FC = () => {
             styleType="initial"
             type="button"
             isLink={true}
-            linkHref="signup"
+            linkHref="register"
             additionalStyles="bg-purple-600 transition-all hover:bg-purple-700"
           >
             Sign Up

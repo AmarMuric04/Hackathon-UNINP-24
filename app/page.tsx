@@ -17,22 +17,21 @@ export default function Home() {
         <ThreeDCardDemo
           imeProfesora="Jonas Schmeddtman"
           slika={slika1}
-          deskripcija="Jonass Schmeddtmann je poznati course creator, proslavio se kursem za
-          JavaScript."
+          deskripcija="Jonas Schmeddtman is a well known course creater, he got famous for his amazing Javascript course."
           brojKurseva={11}
           twitter="jonasschmedtman"
         />
         <ThreeDCardDemo
           imeProfesora="Maximilian Schwarzmüller"
           slika={slika3}
-          deskripcija="Maximilian Schwarzmüller je nemacki course creator poznat po svojim kursevima za React i Typescript."
+          deskripcija="Maximillian Schwarzüller is a German course creater well known for his courses about React & Typescript."
           brojKurseva={7}
           twitter="maxedapps"
         />
         <ThreeDCardDemo
           imeProfesora="Kirill Eremenko"
           slika={slika2}
-          deskripcija="Kirill Eremenko, poznatiji kao SuperDataScience. Proslavljeni course creator iz Australije."
+          deskripcija="Kirill Eremenko, better known as SuperDataScience. Famous course creator from Australia"
           brojKurseva={8}
           twitter="kirill_eremenko"
         />

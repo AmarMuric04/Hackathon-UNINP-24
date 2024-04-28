@@ -49,7 +49,7 @@ export function ThreeDCardDemo({
             translateZ="60"
             className="text-neutral-500 text-sm max-w-sm mt-2 dark:text-neutral-300"
           >
-            Broj Kurseva:{" "}
+            Courses created:{" "}
             <span className="font-extrabold text-lg">{brojKurseva}</span>
           </CardItem>
           <CardItem
@@ -59,7 +59,7 @@ export function ThreeDCardDemo({
             target="__blank"
             className="px-4 py-2 rounded-xl text-sm font-normal dark:text-white"
           >
-            Kontaktiraj →
+            Contact →
           </CardItem>
         </div>
       </CardBody>

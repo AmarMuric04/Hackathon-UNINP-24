@@ -166,12 +166,13 @@ export const Lid = ({
       >
         {/* <div className="absolute inset-0 bg-[#272729] rounded-lg" /> */}
         <iframe
-          width="560"
+          width="550"
           height="315"
           src="https://www.youtube.com/embed/g-RjAjKpkx4?si=f_I_XU01OU9cSAFI"
           title="YouTube video player"
           frameBorder="0"
           allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share, full-screen"
+          className="w-full h-full"
         ></iframe>
       </motion.div>
     </div>
