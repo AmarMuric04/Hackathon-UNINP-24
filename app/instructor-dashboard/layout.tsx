@@ -1,5 +1,5 @@
 "use client";
-import { InstructorNav } from "@/components/instructor";
+import { InstructorNav } from "@/Componentse/instructor";
 import { InstructorContext } from "@/context/InstructorContext";
 import { Metadata } from "next";
 import { usePathname } from "next/navigation";

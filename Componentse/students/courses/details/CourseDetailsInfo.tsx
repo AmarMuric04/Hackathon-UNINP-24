@@ -1,5 +1,5 @@
 "use client";
-import { Button } from "@/components/ui/button";
+import { Button } from "@/Componentse/ui/button";
 import { StudentContext } from "@/context/StudentContext";
 import { usePostHttp } from "@/hooks/usePostHttp";
 import { createGraphicIcon } from "@/utils/helpers";

@@ -1,8 +1,8 @@
 "use client";
 
-import { CheckoutForm, CourseCheckout } from "@/components/checkout";
-import ProtectedRoutes from "@/components/shared/auth/ProtectedRoutes";
-import Button from "@/components/shared/form/Button";
+import { CheckoutForm, CourseCheckout } from "@/Componentse/checkout";
+import ProtectedRoutes from "@/Componentse/shared/auth/ProtectedRoutes";
+import Button from "@/Componentse/shared/form/Button";
 import { StudentContext } from "@/context/StudentContext";
 import React, { useContext, useState } from "react";
 import { useRouter } from "next/navigation";

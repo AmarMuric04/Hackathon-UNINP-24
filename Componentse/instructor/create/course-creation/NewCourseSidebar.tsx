@@ -1,4 +1,4 @@
-import Button from "@/components/shared/form/Button";
+import Button from "@/Componentse/shared/form/Button";
 import { CourseManagamentCreation } from "@/types/instructor/InstructorContextTypes";
 import { NewCourseSidebarProps } from "@/types/instructor/InstructorSidebarTypes";
 import React from "react";

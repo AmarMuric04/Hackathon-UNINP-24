@@ -2,10 +2,10 @@
 import React, { useContext } from "react";
 import { CoursesData } from "../page";
 import Link from "next/link";
-import CourseList from "@/components/students/courses/CourseList";
-import CourseDetailsContent from "@/components/students/courses/details/CourseDetailsContent";
-import CourseDetailsInfo from "@/components/students/courses/details/CourseDetailsInfo";
-import InstructorDetails from "@/components/students/courses/details/InstructorDetails";
+import CourseList from "@/Componentse/students/courses/CourseList";
+import CourseDetailsContent from "@/Componentse/students/courses/details/CourseDetailsContent";
+import CourseDetailsInfo from "@/Componentse/students/courses/details/CourseDetailsInfo";
+import InstructorDetails from "@/Componentse/students/courses/details/InstructorDetails";
 import useSWR from "swr";
 import { StudentContext } from "@/context/StudentContext";
 

@@ -1,4 +1,4 @@
-import Select from "@/components/shared/form/Select";
+import Select from "@/Componentse/shared/form/Select";
 import { languageCaptions } from "@/data/filterdata.config";
 import {
   NewCourseValuesTypes,

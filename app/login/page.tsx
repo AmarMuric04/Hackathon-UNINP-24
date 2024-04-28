@@ -1,7 +1,7 @@
 "use client";
 
-import Login from "@/components/auth/Login";
-import ProtectedAuth from "@/components/shared/auth/ProtectedAuth";
+import Login from "@/Componentse/auth/Login";
+import ProtectedAuth from "@/Componentse/shared/auth/ProtectedAuth";
 import { useAuth } from "@/hooks/useAuth";
 import { usePostHttp } from "@/hooks/usePostHttp";
 import { ClipLoader } from "react-spinners";

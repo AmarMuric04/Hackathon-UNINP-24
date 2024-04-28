@@ -1,4 +1,4 @@
-import { Button } from "@/components/ui/button";
+import { Button } from "@/Componentse/ui/button";
 import { CourseCardProps } from "@/types/courses/CourseInfoTypes";
 import { DollarSign, Timer, User, UserPlus } from "lucide-react";
 import Image from "next/image";

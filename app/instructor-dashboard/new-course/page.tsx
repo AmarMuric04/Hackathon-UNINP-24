@@ -1,7 +1,7 @@
 "use client";
 
-import { NewCourseForm } from "@/components/instructor";
-import ProtectedRoutes from "@/components/shared/auth/ProtectedRoutes";
+import { NewCourseForm } from "@/Componentse/instructor";
+import ProtectedRoutes from "@/Componentse/shared/auth/ProtectedRoutes";
 import React from "react";
 
 const NewCoursePage = () => {

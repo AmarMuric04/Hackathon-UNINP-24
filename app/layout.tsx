@@ -3,7 +3,7 @@
 import dynamic from "next/dynamic";
 
 const Navigation = dynamic(
-  () => import("@/components/shared/layout/Navigation"),
+  () => import("@/Componentse/shared/layout/Navigation"),
   { ssr: false }
 );
 

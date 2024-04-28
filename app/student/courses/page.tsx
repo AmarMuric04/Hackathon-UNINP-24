@@ -1,6 +1,6 @@
 "use client";
-import CourseFilters from "@/components/students/courses/CourseFilters";
-import CourseList from "@/components/students/courses/CourseList";
+import CourseFilters from "@/Componentse/students/courses/CourseFilters";
+import CourseList from "@/Componentse/students/courses/CourseList";
 import { StudentContext } from "@/context/StudentContext";
 import React, { useContext } from "react";
 import useSWR from "swr";

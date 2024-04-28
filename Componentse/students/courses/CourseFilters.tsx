@@ -7,7 +7,7 @@ import {
   SelectItem,
   SelectTrigger,
   SelectValue,
-} from "@/components/ui/select";
+} from "@/Componentse/ui/select";
 
 const CourseFilters = ({ setFilters }: any) => {
   return (

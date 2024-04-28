@@ -1,5 +1,5 @@
 "use client";
-import Input from "@/components/shared/form/Input";
+import Input from "@/Componentse/shared/form/Input";
 import { useValidation } from "@/hooks/useValidation";
 import { NewCoursesState } from "@/types/instructor/InstructorContextTypes";
 import { InputType } from "@/types/form/InputTypes";

@@ -1,5 +1,5 @@
-import Input from "@/components/shared/form/Input";
-import Select from "@/components/shared/form/Select";
+import Input from "@/Componentse/shared/form/Input";
+import Select from "@/Componentse/shared/form/Select";
 import { skillLevelFilters } from "@/data/filterdata.config";
 import { InputType } from "@/types/form/InputTypes";
 import {

@@ -1,8 +1,8 @@
 "use client";
 
-import { CartDetails, CartList } from "@/components/cart";
-import { CourseList } from "@/components/courses";
-import ProtectedRoutes from "@/components/shared/auth/ProtectedRoutes";
+import { CartDetails, CartList } from "@/Componentse/cart";
+import { CourseList } from "@/Componentse/courses";
+import ProtectedRoutes from "@/Componentse/shared/auth/ProtectedRoutes";
 import { StudentContext } from "@/context/StudentContext";
 import useSwr from "swr";
 import { ClipLoader } from "react-spinners";

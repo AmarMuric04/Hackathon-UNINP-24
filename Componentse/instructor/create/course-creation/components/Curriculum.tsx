@@ -1,7 +1,7 @@
 "use client";
 
-import Button from "@/components/shared/form/Button";
-import Input from "@/components/shared/form/Input";
+import Button from "@/Componentse/shared/form/Button";
+import Input from "@/Componentse/shared/form/Input";
 import { useValidation } from "@/hooks/useValidation";
 import { InputType } from "@/types/form/InputTypes";
 import {

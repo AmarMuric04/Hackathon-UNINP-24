@@ -1,7 +1,7 @@
 "use client";
 
-import { InstructorCoursesList } from "@/components/instructor";
-import ProtectedRoutes from "@/components/shared/auth/ProtectedRoutes";
+import { InstructorCoursesList } from "@/Componentse/instructor";
+import ProtectedRoutes from "@/Componentse/shared/auth/ProtectedRoutes";
 import { InstructorContext } from "@/context/InstructorContext";
 import React, { useContext } from "react";
 

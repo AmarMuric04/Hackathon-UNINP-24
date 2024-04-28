@@ -7,8 +7,8 @@ import {
   NewCourseSidebar,
   Pricing,
   Requirements,
-} from "@/components/instructor";
-import ProtectedRoutes from "@/components/shared/auth/ProtectedRoutes";
+} from "@/Componentse/instructor";
+import ProtectedRoutes from "@/Componentse/shared/auth/ProtectedRoutes";
 import { InstructorContext } from "@/context/InstructorContext";
 import { CourseManagamentCreation } from "@/types/instructor/InstructorContextTypes";
 import React, { useContext, useEffect } from "react";
