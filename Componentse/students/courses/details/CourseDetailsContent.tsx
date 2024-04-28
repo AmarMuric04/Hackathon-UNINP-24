@@ -107,10 +107,7 @@ const CourseDetailsContent: React.FC<CourseDetailsProps> = ({ course }) => {
                     height="315"
                     src="https://www.youtube.com/embed/LDB4uaJ87e0?si=dxB8vjXrd_XptIiM"
                     title="YouTube video player"
-                    frameborder="0"
                     allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                    referrerpolicy="strict-origin-when-cross-origin"
-                    allowfullscreen
                   ></iframe>
                 </div>
               )}
