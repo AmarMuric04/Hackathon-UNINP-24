@@ -6,7 +6,10 @@ import {
 } from "@/types/instructor/InstructorContextTypes";
 import React, { ChangeEvent } from "react";
 
-const Pricing: React.FC<NewCoursesState> = ({ setnewCourseValues }) => {
+const Pricing: React.FC<NewCoursesState> = ({
+  setnewCourseValues,
+  newCourseValues,
+}) => {
   return (
     <div className="shadow-lg p-9">
       <div className="flex flex-col gap-2 mb-6">
@@ -23,6 +26,7 @@ const Pricing: React.FC<NewCoursesState> = ({ setnewCourseValues }) => {
         <Select
           id="price"
           options={priceData}
+          value={String(newCourseValues?.price)}
           onChange={(e: ChangeEvent<HTMLSelectElement>) =>
             setnewCourseValues((prevState: NewCourseValuesTypes) => ({
               ...prevState,

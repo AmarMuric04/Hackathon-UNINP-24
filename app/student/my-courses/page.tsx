@@ -10,7 +10,7 @@ const MyCourses = () => {
   const router = useRouter();
 
   return (
-    <div className="flex flex-col gap-10">
+    <div className="flex flex-col gap-10 mt-36">
       <div className="px-36">
         <h1 className="text-white font-bold text-3xl">My Courses</h1>
       </div>

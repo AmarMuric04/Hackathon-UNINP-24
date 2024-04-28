@@ -49,7 +49,7 @@ const SignupPage = () => {
   }
 
   return (
-    <section>
+    <section className="flex items-center justify-center mt-[3em]">
       <Signup register={registerUser} />
     </section>
   );

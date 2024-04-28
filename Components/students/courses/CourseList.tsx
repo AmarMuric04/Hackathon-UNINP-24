@@ -36,7 +36,7 @@ const CourseList: React.FC<CourseListProps> = ({ courses, filterData }) => {
     <div className="grid items-center gap-3 grid-cols-3">
       {courses?.length === 0 && (
         <div>
-          <p>No courses found</p>
+          <p className="text-white">No courses found</p>
         </div>
       )}
       {filteredCourses?.length > 0 &&

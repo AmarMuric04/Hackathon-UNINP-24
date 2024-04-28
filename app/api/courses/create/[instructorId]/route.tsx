@@ -51,7 +51,7 @@ export const POST = async (
       title,
       subtitle,
       description,
-      image: "/assets/graphics/initial.png",
+      image: "/assets/images/8.jpg",
       skillLevel,
       category,
       language,

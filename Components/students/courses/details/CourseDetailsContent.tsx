@@ -1,11 +1,13 @@
 import { BarChart, Play, User } from "lucide-react";
 import Image from "next/image";
-import React from "react";
+import React, { useState } from "react";
 type CourseDetailsProps = {
   course: any;
 };
 
 const CourseDetailsContent: React.FC<CourseDetailsProps> = ({ course }) => {
+  const [isVideoOpen, setIsVideoOpen] = useState(false);
+
   return (
     <div className="p-6 flex-grow basis-1/2">
       <div className="flex items-start gap-6 w-full">
@@ -85,7 +87,10 @@ const CourseDetailsContent: React.FC<CourseDetailsProps> = ({ course }) => {
                 <h2 className="text-white font-bold">{section.title}</h2>
                 <p className="text-white">{section.lectures.length} lectures</p>
               </div>
-              <div className="mt-2">
+              <div
+                onClick={() => setIsVideoOpen(!isVideoOpen)}
+                className="mt-2"
+              >
                 {section.lectures.map((lecture: any) => (
                   <h2
                     className="text-white border border-gray-700 mt-2 p-2"
@@ -95,6 +100,20 @@ const CourseDetailsContent: React.FC<CourseDetailsProps> = ({ course }) => {
                   </h2>
                 ))}
               </div>
+              {isVideoOpen && (
+                <div>
+                  <iframe
+                    width="560"
+                    height="315"
+                    src="https://www.youtube.com/embed/LDB4uaJ87e0?si=dxB8vjXrd_XptIiM"
+                    title="YouTube video player"
+                    frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    referrerpolicy="strict-origin-when-cross-origin"
+                    allowfullscreen
+                  ></iframe>
+                </div>
+              )}
             </li>
           ))}
         </ul>

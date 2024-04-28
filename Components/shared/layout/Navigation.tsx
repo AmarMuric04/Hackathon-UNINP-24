@@ -18,11 +18,11 @@ const Navigation: React.FC = () => {
   const isStudent = authData?.typeAuth === "student";
 
   return (
-    <header className="p-4 shadow-md flex justify-between items-center sticky top-0 z-20 bg-white">
+    <header className="p-4 shadow-md flex backdrop-blur-lg justify-between items-center fixed top-0 z-20 bg-transparent w-full border-b border-purple-600">
       <div className="w-fit">
         <Link href="/">
           <Image
-            src="/assets/images/log.png"
+            src="/assets/images/learnify.png"
             alt="logo"
             width={200}
             height={200}
@@ -31,16 +31,25 @@ const Navigation: React.FC = () => {
       </div>
       {isStudent && (
         <div className="flex gap-6 align-middle">
-          <Link href="/student/courses" className="text-gray-400 font-light">
+          <Link
+            href="/student/courses"
+            className="text-purple-400 transition-all hover:text-purple-600 font-bold"
+          >
             Courses
           </Link>
-          <Link href="/student/my-courses" className="text-gray-400 font-light">
+          <Link
+            href="/student/my-courses"
+            className="text-purple-400 transition-all hover:text-purple-600 font-bold"
+          >
             My Courses
           </Link>
         </div>
       )}
       {isInstructor && (
-        <Link href="/instructor-dashboard" className="text-gray-400 font-light">
+        <Link
+          href="/instructor-dashboard"
+          className="text-purple-400 transition-all hover:text-purple-600 font-bold"
+        >
           Dashboard
         </Link>
       )}
@@ -63,7 +72,7 @@ const Navigation: React.FC = () => {
       <div className="flex gap-6 items-center">
         {isStudent && (
           <Link href="/cart" className="relative">
-            <ShoppingBag />
+            <ShoppingBag color="#fff" />
             <span className="w-6 h-6 bg-yellow-400 absolute rounded-full bottom-[18px] left-4 text-white font-bold text-sm text-center">
               <span className="relative top-[2.4px]">
                 {studentData?.cart?.items.length}
@@ -78,6 +87,7 @@ const Navigation: React.FC = () => {
             disabled={false}
             isLink={false}
             onClick={logout}
+            additionalStyles="bg-purple-600 transition-all hover:bg-purple-700"
           >
             Logout
           </Button>
@@ -89,6 +99,7 @@ const Navigation: React.FC = () => {
             disabled={false}
             isLink={true}
             linkHref="login"
+            additionalStyles="bg-purple-600 transition-all hover:bg-purple-700"
           >
             Sign In
           </Button>
@@ -100,6 +111,7 @@ const Navigation: React.FC = () => {
             type="button"
             isLink={true}
             linkHref="signup"
+            additionalStyles="bg-purple-600 transition-all hover:bg-purple-700"
           >
             Sign Up
           </Button>

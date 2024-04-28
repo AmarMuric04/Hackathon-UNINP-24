@@ -17,7 +17,7 @@ const CheckoutPage = () => {
   }
 
   return (
-    <section className="py-20 px-40 flex gap-12 items-stretch justify-center">
+    <section className="py-20 px-40 flex gap-12 items-stretch justify-center mt-36">
       <div className="basis-1/2">
         <h1 className="text-white headingTitle">Checkout</h1>
         <h1 className="text-white text-xl font-bold mt-2">Payment Details</h1>

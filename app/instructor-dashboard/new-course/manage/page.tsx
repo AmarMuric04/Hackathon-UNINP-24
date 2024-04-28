@@ -68,7 +68,10 @@ const Manage = () => {
             />
           )}
           {courseManage === CourseManagamentCreation.Captions && (
-            <Captions setnewCourseValues={setnewCourseValues} />
+            <Captions
+              newCourseValues={newCourseValues}
+              setnewCourseValues={setnewCourseValues}
+            />
           )}
           {courseManage === CourseManagamentCreation.Basics && (
             <BasicInfo
@@ -77,7 +80,10 @@ const Manage = () => {
             />
           )}
           {courseManage === CourseManagamentCreation.Pricing && (
-            <Pricing setnewCourseValues={setnewCourseValues} />
+            <Pricing
+              newCourseValues={newCourseValues}
+              setnewCourseValues={setnewCourseValues}
+            />
           )}
           {courseManage === CourseManagamentCreation.ForCourse && (
             <ForCourse

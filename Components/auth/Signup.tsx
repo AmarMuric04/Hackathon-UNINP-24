@@ -64,13 +64,14 @@ const Signup: React.FC<SubmitProps> = ({ register }) => {
           Create Account
         </h1>
         <p className="p-2 text-gray-400 text-lg">
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime
-          mollitia, molestiae quas vel sint commodi.
+          Create an account to unlock a world of learning opportunities. Start
+          your journey towards knowledge and growth with our innovative
+          platform.
         </p>
         <p className="text-white font-bold">Register As:</p>
         <div className="flex justify-center gap-2 pt-2">
           <p
-            className={`text-yellow-400 cursor-pointer ${
+            className={`text-purple-400 cursor-pointer text-xl ${
               isType === "instructor" && "font-bold"
             }`}
             onClick={() => chooseType(SignupType.Instructor)}
@@ -79,7 +80,7 @@ const Signup: React.FC<SubmitProps> = ({ register }) => {
           </p>
           <p
             onClick={() => chooseType(SignupType.Student)}
-            className={`text-blue-400 cursor-pointer ${
+            className={`text-blue-400 cursor-pointer text-xl ${
               isType === "student" && "font-bold"
             }`}
           >
@@ -133,7 +134,12 @@ const Signup: React.FC<SubmitProps> = ({ register }) => {
           helperText="Please enter valid password"
           extraType={ExtraType.Password}
         />
-        <Button type="submit" styleType="initial" disabled={!formIsValid}>
+        <Button
+          type="submit"
+          styleType="initial"
+          disabled={!formIsValid}
+          additionalStyles="bg-purple-600 transition-all hover:bg-purple-700"
+        >
           Register
         </Button>
       </div>

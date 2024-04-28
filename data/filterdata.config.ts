@@ -1,13 +1,13 @@
 // Category Filter
 export const categoryFilters = [
-  { label: "", value: "" },
+  { label: "Select Category", value: "" },
   { label: "Technology", value: "technology" },
   { label: "Business", value: "business" },
   { label: "Arts", value: "arts" },
 ];
 // Price Range Filter
 export const priceRangeFilters = [
-  { label: "", value: "" },
+  { label: "Select Price", value: "" },
   { label: "Free", value: "free" },
   { label: "$0 - $50", value: "0-50" },
   { label: "$50 - $100", value: "50-100" },
@@ -23,7 +23,7 @@ export const durationFilters = [
 
 // Skill Level Filter
 export const skillLevelFilters = [
-  { label: "", value: "" },
+  { label: "Select Skill", value: "" },
   { label: "Beginner", value: "beginner" },
   { label: "Intermediate", value: "intermediate" },
   { label: "Advanced", value: "advanced" },
@@ -31,7 +31,7 @@ export const skillLevelFilters = [
 
 // Language Filter
 export const languageFilters = [
-  { label: "", value: "" },
+  { label: "Select Language", value: "" },
   { label: "English", value: "english" },
   { label: "Spanish", value: "spanish" },
   { label: "French", value: "french" },
@@ -88,7 +88,7 @@ export const courseTypeFilters = [
 ];
 
 export const languageCaptions = [
-  { label: "", value: "" },
+  { label: "Select Language", value: "" },
   { label: "English", value: "en" },
   { label: "Spanish", value: "es" },
   { label: "French", value: "fr" },
@@ -113,7 +113,7 @@ export const languageCaptions = [
 ];
 
 export const priceData = [
-  { label: "", value: "" },
+  { label: "Select Price", value: "" },
   { label: "Free", value: "free" },
   { label: "$20", value: "20" },
   { label: "$34", value: "34" },

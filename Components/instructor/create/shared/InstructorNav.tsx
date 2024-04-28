@@ -3,13 +3,13 @@ import Button from "../../../shared/form/Button";
 
 const InstructorNav: React.FC = () => {
   return (
-    <nav className="w-full flex gap-2 p-4 bg-slate-900 justify-center">
+    <nav className="w-full flex gap-2 p-4 justify-center">
       <Button
         isLink={true}
         type="button"
         styleType="initial"
         linkHref="instructor-dashboard/new-course"
-        additionalStyles="rounded-sm"
+        additionalStyles="bg-purple-600 transition-all hover:bg-purple-700"
       >
         Create Course
       </Button>
@@ -18,7 +18,7 @@ const InstructorNav: React.FC = () => {
         linkHref="instructor-dashboard"
         type="button"
         styleType="initial"
-        additionalStyles="rounded-sm"
+        additionalStyles="bg-purple-600 transition-all hover:bg-purple-700"
       >
         My Courses
       </Button>
@@ -27,7 +27,7 @@ const InstructorNav: React.FC = () => {
         linkHref=""
         type="button"
         styleType="initial"
-        additionalStyles="rounded-sm"
+        additionalStyles="bg-purple-600 transition-all hover:bg-purple-700"
       >
         Home
       </Button>

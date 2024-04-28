@@ -36,9 +36,10 @@ const CourseDetailsPage = ({ params }: { params: { courseId: string } }) => {
         <div className="mx-36">
           <CourseList
             filterData={{}}
-            courses={courses?.filter(
-              (course: any) => course.id !== params.courseId
-            )}
+            courses={
+              courses &&
+              courses?.filter((course: any) => course.id !== params.courseId)
+            }
           />
         </div>
       </div>

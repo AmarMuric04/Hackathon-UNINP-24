@@ -21,7 +21,7 @@ const CartPage = () => {
   }
 
   return (
-    <section className="p-6 px-40 flex flex-col gap-2 items-stretch justify-center">
+    <section className="p-6 px-40 flex flex-col gap-2 items-stretch justify-center mt-36">
       <div className="mt-6">
         <h1 className="text-white headingTitle">Shopping Cart</h1>
         <p className="text-gray-400 mt-4">

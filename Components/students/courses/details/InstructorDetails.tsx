@@ -16,7 +16,7 @@ const InstructorDetails: React.FC<Instructor> = ({ course }) => {
       </h1>
       <div className="flex gap-6 items-center flex-wrap">
         <Image
-          src={course?.image}
+          src={"/assets/images/account.jpg"}
           alt={course?.instructor.first_name}
           width={200}
           height={200}

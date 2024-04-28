@@ -6,7 +6,10 @@ import {
 } from "@/types/instructor/InstructorContextTypes";
 import React, { ChangeEvent } from "react";
 
-const Captions: React.FC<NewCoursesState> = ({ setnewCourseValues }) => {
+const Captions: React.FC<NewCoursesState> = ({
+  setnewCourseValues,
+  newCourseValues,
+}) => {
   return (
     <div className="shadow-lg p-9">
       <div className="flex flex-col gap-2 mb-6">
@@ -21,6 +24,7 @@ const Captions: React.FC<NewCoursesState> = ({ setnewCourseValues }) => {
         <Select
           id="captions"
           options={languageCaptions}
+          value={newCourseValues?.captions}
           onChange={(e: ChangeEvent<HTMLSelectElement>) =>
             setnewCourseValues((prevState: NewCourseValuesTypes) => ({
               ...prevState,

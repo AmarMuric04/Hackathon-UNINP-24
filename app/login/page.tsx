@@ -46,7 +46,7 @@ const LoginPage = () => {
   }
 
   return (
-    <section>
+    <section className="flex items-center justify-center mt-40">
       <Login login={loginUser} />
     </section>
   );

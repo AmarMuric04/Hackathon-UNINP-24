@@ -40,7 +40,7 @@ const NewCourseForm: React.FC = () => {
                 Create a course with various learning abilities
               </p>
             </button>
-            <button
+            {/* <button
               type="button"
               onClick={() =>
                 setnewCourseValues((prevValues: NewCourseValuesTypes) => ({
@@ -57,7 +57,7 @@ const NewCourseForm: React.FC = () => {
               <p className="text-gray-400">
                 Create a test to check your student knowledge from courses
               </p>
-            </button>
+            </button> */}
           </div>
           <div>
             <Button

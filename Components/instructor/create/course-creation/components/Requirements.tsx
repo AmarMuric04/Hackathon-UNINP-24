@@ -14,10 +14,10 @@ const Requirements: React.FC<NewCoursesState> = ({
   setnewCourseValues,
   newCourseValues,
 }) => {
-  const requirementInp = useValidation([VALIDATOR_MINLENGTH(20)]);
+  const requirementInp = useValidation([VALIDATOR_MINLENGTH(3)]);
 
   function addRequirement(): void {
-    if (requirementInp.isValid && requirementInp.value.length >= 20) {
+    if (requirementInp.isValid && requirementInp.value.length >= 3) {
       const requirements = newCourseValues?.requirements.map(
         (requirement) => requirement
       );

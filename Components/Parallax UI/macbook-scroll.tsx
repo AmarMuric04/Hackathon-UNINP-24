@@ -68,7 +68,7 @@ export const MacbookScroll = ({
   return (
     <div
       ref={ref}
-      className="min-h-[200vh]  flex flex-col items-center py-0 md:py-128 justify-start flex-shrink-0 [perspective:800px] transform md:scale-100  scale-[0.35] sm:scale-50"
+      className="min-h-[200vh]  flex flex-col items-center py-0 md:py-[13em] justify-start flex-shrink-0 [perspective:800px] transform md:scale-100  scale-[0.35] sm:scale-50"
     >
       <motion.h2
         style={{
@@ -164,13 +164,21 @@ export const Lid = ({
         }}
         className="h-96 w-[32rem] absolute inset-0 bg-[#010101] rounded-2xl p-2"
       >
-        <div className="absolute inset-0 bg-[#272729] rounded-lg" />
-        <Image
-          src={src as string}
-          alt="aceternity logo"
-          fill
-          className="object-cover object-left-top absolute rounded-lg inset-0 h-full w-full"
-        />
+        {/* <div className="absolute inset-0 bg-[#272729] rounded-lg" /> */}
+        <iframe
+          width="560"
+          height="315"
+          src="https://www.youtube.com/embed/g-RjAjKpkx4?si=f_I_XU01OU9cSAFI"
+          title="YouTube video player"
+          frameBorder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share, full-screen"
+          referrerpolicy="strict-origin-when-cross-origin"
+          allowfullscreen="allowfullscreen"
+          mozallowfullscreen="mozallowfullscreen"
+          msallowfullscreen="msallowfullscreen"
+          oallowfullscreen="oallowfullscreen"
+          webkitallowfullscreen="webkitallowfullscreen"
+        ></iframe>
       </motion.div>
     </div>
   );

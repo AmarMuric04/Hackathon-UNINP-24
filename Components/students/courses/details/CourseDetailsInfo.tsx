@@ -12,6 +12,7 @@ import {
   PlayCircle,
 } from "lucide-react";
 import { revalidatePath } from "next/cache";
+import Link from "next/link";
 import { useRouter } from "next/navigation";
 import React, { FormEvent, useContext, useState } from "react";
 
@@ -97,6 +98,7 @@ const CourseDetailsInfo: React.FC<CourseDetailsProps> = ({ course }) => {
       {!studentCoursesIds?.includes(course?._id) ? (
         <div className="flex gap-2">
           {/* <Button>Start Learning</Button> */}
+
           <Button onClick={addToCart} type="button">
             <span className="flex items-center justify-center gap-4">
               {studentCartIds?.includes(course?._id)
@@ -122,6 +124,13 @@ const CourseDetailsInfo: React.FC<CourseDetailsProps> = ({ course }) => {
           </Button>
         </div>
       )}
+      <Link href="/quiz">
+        <Button type="button">
+          <span className="flex items-center justify-center gap-4">
+            Start the quiz
+          </span>
+        </Button>
+      </Link>
     </div>
   );
 };

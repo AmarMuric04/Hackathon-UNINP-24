@@ -55,6 +55,7 @@ const CourseSchema = new Schema({
       lectures: [
         {
           title: { type: String, required: true },
+          src: { type: String, required: true },
         },
       ],
     },

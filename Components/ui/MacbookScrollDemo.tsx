@@ -4,11 +4,11 @@ import Link from "next/link";
 
 export function MacbookScrollDemo() {
   return (
-    <div className="overflow-hidden dark:bg-[#0B0B0F] bg-[#02010a] w-full">
+    <div className="overflow-hidden  dark:bg-[#0B0B0F] bg-[#02010a] w-full">
       <MacbookScroll
         title={
-          <span>
-            This Macbook is built with Tailwindcss. <br /> No kidding.
+          <span className="text-white">
+            Check out the best courses with just one click. <br /> No kidding.
           </span>
         }
         badge={

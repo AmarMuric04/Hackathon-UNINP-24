@@ -20,7 +20,7 @@ const NewCourseSidebar: React.FC<NewCourseSidebarProps> = ({
           Create Your Course
         </h1>
         <button
-          className={`font-light text-md text-gray-700 ${
+          className={`font-light text-md text-purple-700 ${
             isFilledRequirements && "text-green-400"
           }`}
           onClick={() => setCourseManage(CourseManagamentCreation.Requirements)}
@@ -28,7 +28,7 @@ const NewCourseSidebar: React.FC<NewCourseSidebarProps> = ({
           Requirements
         </button>
         <button
-          className={`font-light text-md text-gray-700 ${
+          className={`font-light text-md text-purple-700 ${
             isFilledCurriculum && "text-green-400"
           }`}
           onClick={() => setCourseManage(CourseManagamentCreation.Curriculum)}
@@ -36,7 +36,7 @@ const NewCourseSidebar: React.FC<NewCourseSidebarProps> = ({
           Curriculum
         </button>
         <button
-          className={`font-light text-md text-gray-700 ${
+          className={`font-light text-md text-purple-700 ${
             isFilledCaptions && "text-green-400"
           }`}
           onClick={() => setCourseManage(CourseManagamentCreation.Captions)}
@@ -49,7 +49,7 @@ const NewCourseSidebar: React.FC<NewCourseSidebarProps> = ({
           Publish Your Course
         </h1>
         <button
-          className={`font-light text-md text-gray-700 ${
+          className={`font-light text-md text-purple-700 ${
             isFilledBasic && "text-green-400"
           }`}
           onClick={() => setCourseManage(CourseManagamentCreation.Basics)}
@@ -57,7 +57,7 @@ const NewCourseSidebar: React.FC<NewCourseSidebarProps> = ({
           Basic Info
         </button>
         <button
-          className={`font-light text-md text-gray-700 ${
+          className={`font-light text-md text-purple-700 ${
             isFilledPrice && "text-green-400"
           }`}
           onClick={() => setCourseManage(CourseManagamentCreation.Pricing)}
@@ -65,7 +65,7 @@ const NewCourseSidebar: React.FC<NewCourseSidebarProps> = ({
           Set Price
         </button>
         <button
-          className={`font-light text-md text-gray-700 ${
+          className={`font-light text-md text-purple-700 ${
             isFilledForCourse && "text-green-400"
           }`}
           onClick={() => setCourseManage(CourseManagamentCreation.ForCourse)}

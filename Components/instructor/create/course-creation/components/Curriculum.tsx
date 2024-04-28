@@ -19,11 +19,13 @@ const Section: React.FC<SectionProps> = ({
   setnewCourseValues,
 }) => {
   const [isItemCreating, setIsItemCreating] = useState<boolean | null>(false);
+  const newLectureSrc = useValidation([VALIDATOR_REQUIRE()]);
   const newLectureInput = useValidation([VALIDATOR_REQUIRE()]);
 
   function createLecture(): void {
     const newLecture = {
       title: newLectureInput.value,
+      src: newLectureSrc.value,
     };
 
     if (newLectureInput.isValid && newLectureInput.value !== "") {
@@ -71,7 +73,7 @@ const Section: React.FC<SectionProps> = ({
         </div>
       </div>
       {isItemCreating && (
-        <div className="border p-2 ">
+        <div className="border p-2 flex flex-col gap-3 ">
           <Input
             type={InputType.Input}
             label="Lecture name"
@@ -81,6 +83,16 @@ const Section: React.FC<SectionProps> = ({
             helperText="Please enter valid input"
             error={!newLectureInput.isValid && newLectureInput.isTouched}
             id={"lecture_name"}
+          />
+          <Input
+            type={InputType.Input}
+            label="Lecture video source"
+            placeholder="https..."
+            onChange={newLectureSrc.onChangeHandler}
+            onBlur={newLectureSrc.onBlurHandler}
+            helperText="Please enter valid input"
+            error={!newLectureSrc.isValid && newLectureSrc.isTouched}
+            id={"lecture_src"}
           />
           <Button
             styleType="initial"

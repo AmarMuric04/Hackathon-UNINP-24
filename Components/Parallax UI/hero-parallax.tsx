@@ -105,14 +105,15 @@ export const Header = () => {
   return (
     <div className="max-w-7xl relative mx-auto py-20 md:py-40 px-4 w-full  left-0 top-0">
       <h1 className="text-2xl md:text-7xl font-bold  text-white">
-        Najbolja <br /> platforma za učenje{" "}
+        Next<span className="text-purple-600">Gen</span> <br /> online learning
+        platform{" "}
       </h1>
       <p className="max-w-2xl text-base md:text-xl mt-8 text-white">
-        Dobrodošli na našu revolucionarnu online platformu za učenje! Otkrijte
-        novu avanturu znanja iz udobnosti svog doma. Uživajte u kombinaciji
-        najnovijih tehnologija i provjerenih metoda učenja za nevjerojatno
-        iskustvo učenja. Bez obzira na vaš nivo, inspirativni kursevi čekaju da
-        vas nadahnu i motiviraju.
+        Welcome to our revolutionary online learning platform! Discover a new
+        adventure of knowledge from the comfort of your home. Enjoy a
+        combination of the latest technologies and proven learning methods for
+        an incredible learning experience. Regardless of your level,
+        inspirational courses are waiting to inspire and motivate you.
       </p>
     </div>
   );

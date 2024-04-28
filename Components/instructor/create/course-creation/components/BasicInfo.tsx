@@ -82,6 +82,7 @@ const BasicInfo: React.FC<NewCoursesState> = ({
             <Select
               id="advanced"
               options={skillLevelFilters}
+              value={newCourseValues?.level}
               onChange={(e: ChangeEvent<HTMLSelectElement>) =>
                 setnewCourseValues((prevState: NewCourseValuesTypes) => ({
                   ...prevState,

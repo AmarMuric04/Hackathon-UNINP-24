@@ -23,7 +23,7 @@ export default function RootLayout({
     pathname === "/instructor-dashboard" ||
     pathname === "/instructor-dashboard/new-course" ||
     pathname === "/instructor-dashboard/new-course/manage";
-  const isLoginPathname = pathname === "/signup" || pathname === "/login";
+  const isLoginPathname = pathname === "/register" || pathname === "/login";
   const showBoolean = !isInstructorPathname && !isLoginPathname;
   const authData = getAuthData();
 

@@ -42,13 +42,13 @@ const Login: React.FC<LoginProps> = ({ login }) => {
           Login to Account
         </h1>
         <p className="p-2 text-gray-400 text-lg">
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime
-          mollitia, molestiae quas vel sint commodi.
+          Please sign in to access your account. If you don't have an account
+          yet, you can create one easily
         </p>
         <p className="text-white font-bold">Login As:</p>
         <div className="flex justify-center gap-2 pt-2">
           <p
-            className={`text-yellow-400 cursor-pointer ${
+            className={`text-purple-400 cursor-pointer text-xl ${
               isType === "instructor" && "font-bold"
             }`}
             onClick={() => chooseType(LoginType.Instructor)}
@@ -57,7 +57,7 @@ const Login: React.FC<LoginProps> = ({ login }) => {
           </p>
           <p
             onClick={() => chooseType(LoginType.Student)}
-            className={`text-blue-400 cursor-pointer ${
+            className={`text-blue-400 cursor-pointer text-xl ${
               isType === "student" && "font-bold"
             }`}
           >
@@ -89,7 +89,12 @@ const Login: React.FC<LoginProps> = ({ login }) => {
           helperText="Please enter valid password"
           extraType={ExtraType.Password}
         />
-        <Button type="submit" styleType="initial" disabled={!formIsValid}>
+        <Button
+          type="submit"
+          styleType="initial"
+          disabled={!formIsValid}
+          additionalStyles="bg-purple-600 transition-all hover:bg-purple-700"
+        >
           Login
         </Button>
       </div>

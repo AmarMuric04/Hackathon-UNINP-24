@@ -243,7 +243,7 @@ const CoursesPage = () => {
   const { filterData, setFilterData } = useContext(StudentContext);
 
   return (
-    <div className="flex gap-3 p-10">
+    <div className="flex gap-3 p-10 mt-16">
       <div className="basis-full flex flex-col gap-7">
         <div>
           <CourseList courses={coursesData} filterData={filterData} />
