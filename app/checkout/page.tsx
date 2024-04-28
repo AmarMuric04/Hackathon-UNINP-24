@@ -12,7 +12,7 @@ const CheckoutPage = () => {
   const [isDisabled, setisDisabled] = useState(false);
   const { studentData, purchaseCourseBuy } = useContext(StudentContext);
 
-  if (studentData?.cart.items.length <= 0) {
+  if (studentData?.cart?.items?.length <= 0) {
     router.push("/cart");
   }
 
@@ -29,7 +29,7 @@ const CheckoutPage = () => {
         </div>
         <div className="flex flex-col gap-4">
           <h1 className="text-white headingTitle flex justify-between">
-            Total <span>${studentData?.cart.totalAmount}</span>
+            Total <span>${studentData?.cart?.totalAmount}</span>
           </h1>
           <Button
             type="button"
@@ -42,7 +42,7 @@ const CheckoutPage = () => {
         </div>
         <div>
           <h1 className="text-white headingTitle">Order Details</h1>
-          {studentData?.cart.items.map((cartItem) => (
+          {studentData?.cart?.items.map((cartItem) => (
             <CourseCheckout
               key={cartItem._id}
               title={cartItem.title}

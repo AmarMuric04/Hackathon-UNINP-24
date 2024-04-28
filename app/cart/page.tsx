@@ -24,13 +24,13 @@ const CartPage = () => {
       <div className="mt-6">
         <h1 className="text-white headingTitle">Shopping Cart</h1>
         <p className="text-gray-400 mt-4">
-          {studentData?.cart.items.length} Course in Cart
+          {studentData?.cart?.items?.length} Course in Cart
         </p>
       </div>
       <hr />
       <div className="flex items-stretch justify-center gap-2">
-        <CartList cartCourses={studentData?.cart.items} />
-        <CartDetails totalAmount={studentData?.cart.totalAmount} />
+        <CartList cartCourses={studentData?.cart?.items} />
+        <CartDetails totalAmount={studentData?.cart?.totalAmount} />
       </div>
     </section>
   );

@@ -25,7 +25,7 @@ const CourseDetailsInfo: React.FC<CourseDetailsProps> = ({ course }) => {
   const { sendRequest, isLoading, message } = usePostHttp();
   const { studentData, addToFavorites } = useContext(StudentContext);
 
-  const studentCartIds = studentData?.cart.items.map((item: any) => item._id);
+  const studentCartIds = studentData?.cart?.items.map((item: any) => item._id);
   const studentCoursesIds = studentData?.courses.map((item: any) => item._id);
   const router = useRouter();
 
